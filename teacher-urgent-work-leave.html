@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Teacher Leave Application (Urgent Work)</title>
+<meta name="description" content="Teacher leave application for urgent personal work in English and Hindi. Copy ready format.">
+
+<style>
+body{
+    font-family: Arial, sans-serif;
+    margin:0;
+    background:#f4f6f9;
+}
+
+.container{
+    max-width:800px;
+    margin:auto;
+    padding:20px;
+}
+
+h1{
+    text-align:center;
+    margin-bottom:10px;
+}
+
+.section{
+    margin-top:25px;
+}
+
+h2{
+    font-size:20px;
+    margin-bottom:8px;
+}
+
+button{
+    width:100%;
+    padding:14px;
+    font-size:16px;
+    background:#1976d2;
+    color:white;
+    border:none;
+    border-radius:8px;
+    margin-bottom:15px;
+    cursor:pointer;
+}
+
+.application{
+    background:white;
+    padding:18px;
+    border-radius:10px;
+    box-shadow:0 2px 6px rgba(0,0,0,0.1);
+    white-space:pre-wrap;
+    line-height:1.7;
+    font-size:15px;
+    overflow-wrap:break-word;
+}
+
+hr{
+    margin:35px 0;
+    border:none;
+    border-top:1px solid #ddd;
+}
+
+.back{
+    display:block;
+    text-align:center;
+    margin-top:25px;
+    font-weight:bold;
+    text-decoration:none;
+}
+
+@media(max-width:600px){
+    h1{font-size:20px;}
+    h2{font-size:17px;}
+    .application{font-size:14px;}
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>Teacher Leave Application (Urgent Work)</h1>
+
+<div class="section">
+<h2>English Format</h2>
+<button onclick="copyEnglish()">Copy English</button>
+
+<div id="englishText" class="application">
+To,
+The Principal
+[School Name]
+[School Address]
+
+Subject: Leave Application for Urgent Personal Work
+
+Respected Sir/Madam,
+
+I respectfully request leave from [Start Date] to [End Date] due to urgent personal work that requires my presence.
+
+I have arranged my classes so that academic work will not be affected. I will resume duty on [Joining Date] and complete any pending responsibilities promptly.
+
+Kindly grant me leave for the above-mentioned period.
+
+Thank you.
+
+Yours faithfully,
+[Teacher Name]
+[Designation / Subject]
+[Employee ID]
+[Contact Number]
+[Date]
+</div>
+</div>
+
+<hr>
+
+<div class="section">
+<h2>Hindi Format</h2>
+<button onclick="copyHindi()">Copy Hindi</button>
+
+<div id="hindiText" class="application">
+सेवा में,
+प्रधानाचार्य महोदय/महोदया
+[विद्यालय का नाम]
+[विद्यालय का पता]
+
+विषय: अत्यावश्यक व्यक्तिगत कार्य हेतु अवकाश आवेदन
+
+महोदय/महोदया,
+
+सविनय निवेदन है कि मुझे अत्यावश्यक व्यक्तिगत कार्य के कारण दिनांक [Start Date] से [End Date] तक अवकाश की आवश्यकता है।
+
+मेरी कक्षाओं का समुचित प्रबंध कर दिया गया है जिससे शैक्षणिक कार्य प्रभावित नहीं होगा। मैं दिनांक [Joining Date] से पुनः कार्यभार ग्रहण करूँगा/करूँगी तथा शेष कार्य शीघ्र पूर्ण कर दूँगा/दूँगी।
+
+कृपया उक्त अवधि हेतु अवकाश स्वीकृत करने की कृपा करें।
+
+धन्यवाद।
+
+भवदीय,
+[शिक्षक का नाम]
+[पद / विषय]
+[कर्मचारी आईडी]
+[मोबाइल नंबर]
+[दिनांक]
+</div>
+</div>
+
+<a class="back" href="index.html">← Back to Home</a>
+
+</div>
+
+<script>
+function copyEnglish(){
+  navigator.clipboard.writeText(document.getElementById("englishText").innerText);
+  alert("English application copied");
+}
+
+function copyHindi(){
+  navigator.clipboard.writeText(document.getElementById("hindiText").innerText);
+  alert("Hindi application copied");
+}
+</script>
+
+</body>
+</html>
